@@ -83,7 +83,7 @@ source /opt/ros/jazzy/setup.bash # or setup.zsh for ZSH
 
 # Clone repo to ROS workspace
 mkdir -p ~/ros2_ws/src && cd ~/ros2_ws/src
-git clone https://github.com/onerkebab/ROS2-Motion-Planning
+git clone https://github.com/onerkebab/ros2-path-planning
 
 # Build package
 cd ~/ros2_ws
