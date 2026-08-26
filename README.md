@@ -2,7 +2,7 @@
 
 ![MIT](https://img.shields.io/badge/License-MIT-%23750014) [![ROS](https://img.shields.io/badge/ROS-22314E?logo=ROS&logoColor=white)](#) [![C++](https://img.shields.io/badge/C++-%2300599C.svg?logo=c%2B%2B&logoColor=white)](#)
 
-A ROS 2 package implementing **A\* Search** and **RRT** (Rapidly-exploring Random Tree) motion planning algorithms for a mobile robot navigating 2D terrain maps, using a client-service architecture. The planner accepts start/goal poses and a map file with grayscale elevation values representing "terrain," or difficulty to traverse. It inflates configuration space obstacles for a cylindrical robot, and computes a minimum-cost collision-free path visualizable in RViz. 
+A ROS 2 package implementing **A\* Search** and **RRT** (Rapidly-exploring Random Tree) path planning algorithms for a mobile robot navigating 2D terrain maps, using a client-service architecture. The planner accepts start/goal poses and a map file with grayscale elevation values representing "terrain," or difficulty to traverse. It inflates configuration space obstacles for a cylindrical robot, and computes a minimum-cost collision-free path visualizable in RViz. 
 
 In the demo GIFs below, red pixels are obstacles, and terrain difficulty increases in the following order: green (no penalty) > white > black > yellow > orange (highest penalty). A visualization of the search process is also shown, with closed-list nodes for A* Search and the tree for RRT.
 
@@ -95,7 +95,7 @@ source install/setup.bash
 
 ### Launch file (Recommended)
 
-To run the entire motion planning pipeline (server, client, and RViz 2 visualization), use the provided launch file. By default, `animate` is set to false and search visualization is disabled. Setting `animate` to true enables visualization of closed list for A* and exploration tree for RRT.
+To run the entire path planning pipeline (server, client, and RViz 2 visualization), use the provided launch file. By default, `animate` is set to false and search visualization is disabled. Setting `animate` to true enables visualization of closed list for A* and exploration tree for RRT.
 
 **Using A\* algorithm with search visualization on mixed terrain map:**
 ```bash
