@@ -1,4 +1,4 @@
-# ROS 2 Motion Planning
+# A* and RRT Path Planning in ROS 2
 
 ![MIT](https://img.shields.io/badge/License-MIT-%23750014) [![ROS](https://img.shields.io/badge/ROS-22314E?logo=ROS&logoColor=white)](#) [![C++](https://img.shields.io/badge/C++-%2300599C.svg?logo=c%2B%2B&logoColor=white)](#)
 
